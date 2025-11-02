@@ -4,13 +4,13 @@
 
 ---
 
-## Project Description 
+### Project Description 
 
 Rex (Smart Email Assist) is an AI-powered Chrome extension designed to generate professional, context-aware email replies directly within Gmail. It uses Spring Boot as the backend and integrates the Gemini API to craft intelligent responses based on the email content and selected tone. I built this project to save time and improve productivity by automating the process of writing polished, personalized email replies with just one click.
 
 ---
 
-## 🚀 Features
+### 🚀 Features
 
 
 1. **AI-Powered Email Reply Generation** – Automatically creates professional and context-aware replies using the Gemini API.  
@@ -67,39 +67,39 @@ It uses **Google Gemini API** for generating AI-powered, context-aware email rep
 
 ---
 
-#### 🚀 Gemini API Setup
+### 🚀 Gemini API Setup
 
 1. Visit **[Google AI Studio](https://aistudio.google.com/app/apikey)**.  
 2. Sign in with your Google account.  
 3. Generate a **new Gemini API key**.
 
-**Option 1: Manual Setup**
+   **Option 1: Manual Setup**
+   
+      a. Copy the key and add it to your Spring Boot project:
+         - Open your project’s `.env` or `application.properties` file.  
+         - Add:
+      ```
+      GEMINI_KEY=your_api_key_here
+      GEMINI_URL=https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent
+      ```
+      b. Restart your Spring Boot application to apply the changes.
+   
+   **Option 2: IntelliJ Run Configuration**
+   
+      a. Open your Spring Boot project in IntelliJ IDEA.  
+      b. Go to **Run → Edit Configurations → Environment Variables**.  
+      c. Add the following variables: (with a semicolon in between " ; ")
+      ```
+      GEMINI_KEY=your_api_key_here
+      GEMINI_URL=https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent
+      ```
+      d. Save and run your application — IntelliJ will automatically inject these values into your Spring Boot environment.
 
-a. Copy the key and add it to your Spring Boot project:
-   - Open your project’s `.env` or `application.properties` file.  
-   - Add:
-     ```
-     GEMINI_KEY=your_api_key_here
-     GEMINI_URL=https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent
-     ```
-b. Restart your Spring Boot application to apply the changes.
-
-**Option 2: IntelliJ Run Configuration**
-
-a. Open your Spring Boot project in IntelliJ IDEA.  
-b. Go to **Run → Edit Configurations → Environment Variables**.  
-c. Add the following variables: (with a semicolon in between " ; ")
-```
-GEMINI_KEY=your_api_key_here
-GEMINI_URL=https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent
-```
-d. Save and run your application — IntelliJ will automatically inject these values into your Spring Boot environment.
-
- ![image alt]()
+ ![image alt](https://github.com/kiran948/Rex---Smart-Email-Assistant/blob/e6eeef7c78c670fcad3d1ef6f5880c3f471912f8/Screenshot%202025-11-02%20203748.png)
 
 ---
 
-#### 🧩 Chrome Extension Setup
+### 🧩 Chrome Extension Setup
 
 1. Open **Google Chrome** → Go to `chrome://extensions/`.  
 2. Turn on **Developer Mode** (toggle in the top-right corner).  
@@ -110,7 +110,7 @@ d. Save and run your application — IntelliJ will automatically inject these va
 
 ---
 
-#### 🔗 Useful Links
+### 🔗 Useful Links
 
 - **Gemini API Documentation:** [https://ai.google.dev/](https://ai.google.dev/)  
 - **Chrome Extension Developer Guide:** [https://developer.chrome.com/docs/extensions/](https://developer.chrome.com/docs/extensions/)
@@ -118,12 +118,12 @@ d. Save and run your application — IntelliJ will automatically inject these va
 
 ---
 
-#### 📁 Project Structure
+### 📁 Project Structure
 
-![image alt]()
+![image alt](https://github.com/kiran948/Rex---Smart-Email-Assistant/blob/e6eeef7c78c670fcad3d1ef6f5880c3f471912f8/Screenshot%202025-11-02%20203343.png)
 ---
 
-## ▶️ Setup & Installation
+### ▶️ Setup & Installation
 
 Below is a rough guide (adapt as needed for your implementation):
 
